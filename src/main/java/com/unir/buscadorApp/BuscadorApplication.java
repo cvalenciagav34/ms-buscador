@@ -1,4 +1,4 @@
-package com.company.microservice;
+package com.unir.buscadorApp;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Slf4j
-public class MicroserviceApplication {
+public class BuscadorApplication {
 
 	public static void main(String[] args) {
 		// Retrieve execution profile from environment variable. If not present, default profile is selected.
@@ -19,6 +19,6 @@ public class MicroserviceApplication {
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
-		SpringApplication.run(MicroserviceApplication.class, args);
+		SpringApplication.run(BuscadorApplication.class, args);
 	}
 }

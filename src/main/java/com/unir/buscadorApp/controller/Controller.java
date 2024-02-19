@@ -1,4 +1,4 @@
-package com.company.microservice.controller;
+package com.unir.buscadorApp.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
