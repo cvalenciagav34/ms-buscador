@@ -12,7 +12,7 @@ eureka:
 ## Configuration for App name and Spring Data
 spring:
   application:
-    name: microservice
+    name: ms-buscadorApp-products
   datasource:
     url: jdbc:h2:mem:testdb
   jpa:
