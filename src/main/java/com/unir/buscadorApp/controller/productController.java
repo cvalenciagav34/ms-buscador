@@ -31,7 +31,7 @@ public class productController {
     public ResponseEntity<String> get() {
         return ResponseEntity.ok("Hello from Railway + Spring!");
     }
-/*
+
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/products")
     @Operation(
@@ -179,5 +179,5 @@ public class productController {
             return ResponseEntity.internalServerError().build();
         }
 
-    }*/
+    }
 }
