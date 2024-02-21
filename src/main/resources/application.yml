@@ -26,5 +26,15 @@ spring:
 
 ## Instance port
 server:
-  port: 8080
+  port: '8088'
+  fullAddress: ${HOST:http://localhost}:${PORT:${server.port}}
+
+elasticsearch:
+  host: ${ELASTICSEARCH_HOST:unir-cluster-3642034561.us-east-1.bonsaisearch.net}
+  credentials:
+    user: ${ELASTICSEARCH_USER:h66b9nmu14}
+    password: ${ELASTICSEARCH_PWD:tihgmfi5hv}
+logging:
+  level:
+    tracer: TRACE
 
