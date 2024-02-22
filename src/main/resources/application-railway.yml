@@ -9,4 +9,4 @@ eureka:
     secure-port: 443
 ## Instance port
 server:
-  fullAddress: ${HOST}
+  fullAddress: ${HOST:/${APP_NAME}}
