@@ -27,7 +27,7 @@ spring:
 ## Instance port
 server:
   port: '8080'
-  fullAddress: ${HOSTNAME:http://localhost}:${PORT:${server.port}}
+  fullAddress: ${HOST:http://localhost}:${PORT:${server.port}}
 
 elasticsearch:
   host: ${ELASTICSEARCH_HOST:unir-cluster-3642034561.us-east-1.bonsaisearch.net}
