@@ -32,7 +32,7 @@ public class productController {
         return ResponseEntity.ok("Hello from Railway + Spring!");
     }
 
-    @CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/","http://localhost:3000"})
+    //@CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/","http://localhost:3000"})
     @GetMapping("/products")
     @Operation(
             operationId = "Obtener productos",
@@ -63,7 +63,7 @@ public class productController {
         ProductsResponse products = ProductService.getProducts(name, company, price, description, urlImage, largeDescription,  score, aggregate);
         return ResponseEntity.ok(products);
     }
-    @CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
+    //@CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
     @GetMapping("/products/{id}")
     @Operation(
             operationId = "Obtener un producto",
@@ -86,7 +86,7 @@ public class productController {
             return ResponseEntity.notFound().build();
         }
     }
-    @CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
+    //@CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
     @DeleteMapping("/products/{id}")
     @Operation(
             operationId = "Eliminar un producto",
@@ -109,7 +109,7 @@ public class productController {
             return ResponseEntity.notFound().build();
         }
     }
-    @CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
+    //@CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
     @PostMapping("/products")
     @Operation(
             operationId = "Crear un producto",
@@ -138,7 +138,7 @@ public class productController {
         }
     }
 
-    @CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
+    //@CrossOrigin(origins = {"https://tienda-online-blue.vercel.app/", "http://localhost:3000"})
     @PutMapping("/products/{id}")
     @Operation(
             operationId = "Actualizar un producto",
